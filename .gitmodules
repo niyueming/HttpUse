@@ -1,0 +1,6 @@
+[submodule "httpLibrary"]
+	path = httpLibrary
+	url = https://niyueming@github.com/niyueming/httpLibrary.git
+[submodule "okHttp3Library"]
+	path = okHttp3Library
+	url = https://niyueming@github.com/niyueming/okHttp3Library.git

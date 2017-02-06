@@ -10,3 +10,5 @@
  */
 
 include ':app'
+include ':httpLibrary'
+include ':okHttp3Library'
