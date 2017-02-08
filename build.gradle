@@ -36,6 +36,7 @@ ext {
     buildToolsVersion = '24.0.2'
     supportLibVersion = '25.1.0'
     playServicesVersion = '9.4.0'
+    fastjsonLibVersion = '1.1.56.android'
 }
 
 task clean(type: Delete) {
