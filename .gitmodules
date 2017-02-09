@@ -4,3 +4,9 @@
 [submodule "okHttp3Library"]
 	path = okHttp3Library
 	url = https://niyueming@github.com/niyueming/okHttp3Library.git
+[submodule "imageLoaderLibrary"]
+	path = imageLoaderLibrary
+	url = https://niyueming@github.com/niyueming/imageLoaderLibrary.git
+[submodule "frescoImageLoaderLibrary"]
+	path = frescoImageLoaderLibrary
+	url = https://niyueming@github.com/niyueming/frescoImageLoaderLibrary.git
