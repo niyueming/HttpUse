@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
     private NGenericsSerializer serializer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         request();
     }
 
-    private void request(){
+    private void request() {
         NRequest<OkHttp3Callback, Response> request = new OkHttp3Request.Builder(this)
                 .url("http://www.baidu.com")
                 .method(METHOD.GET)
@@ -39,12 +40,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onError(Exception e, String error, int id) {
-                Log.e("request",error);
+                Log.e("request", error);
             }
 
             @Override
             public void onResponse(String response, int id) {
-                Log.e("response",response);
+                Log.e("response", response);
                 textView.setText(response);
             }
 
