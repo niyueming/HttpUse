@@ -10,3 +10,6 @@
 [submodule "frescoImageLoaderLibrary"]
 	path = frescoImageLoaderLibrary
 	url = https://niyueming@github.com/niyueming/frescoImageLoaderLibrary.git
+[submodule "aphHttpReturn"]
+	path = aphHttpReturn
+	url = https://git.oschina.net/nym/aphhttpreturn.git

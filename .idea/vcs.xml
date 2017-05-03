@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/aphHttpReturn" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/frescoImageLoaderLibrary" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/httpLibrary" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/imageLoaderLibrary" vcs="Git" />
