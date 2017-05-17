@@ -43,28 +43,28 @@ public class MainActivity extends AppCompatActivity {
 
     private void request() {
 
-        APHSerializerCallback<TestVO> callback = new APHSerializerCallback<TestVO>(new APHCallback<TestVO>() {
-
-
-            @Override
-            public void onError(Exception e, String error, int id) {
-                e.printStackTrace();
-            }
-
-            @Override
-            public void onAPHCode(int errcode, String errmsg, int id) {
-
-            }
-
-            @Override
-            public void onResponse(TestVO response, int id) {
-                Test Test = response.getData().get(0);
-                System.out.println(Test.getORS_NAME());
-                System.out.println(Test.getRA_NAME());
-                System.out.println(Test.getSTA_DUEDATE());
-                System.out.println(Test.getSTAFF_NUMBER());
-            }
-        }){};
+//        APHSerializerCallback<TestVO> callback = new APHSerializerCallback<TestVO>(new APHCallback<TestVO>() {
+//
+//
+//            @Override
+//            public void onError(Exception e, String error, int id) {
+//                e.printStackTrace();
+//            }
+//
+//            @Override
+//            public void onAPHCode(int errcode, String errmsg, int id) {
+//
+//            }
+//
+//            @Override
+//            public void onResponse(TestVO response, int id) {
+//                Test Test = response.getData().get(0);
+//                System.out.println(Test.getORS_NAME());
+//                System.out.println(Test.getRA_NAME());
+//                System.out.println(Test.getSTA_DUEDATE());
+//                System.out.println(Test.getSTAFF_NUMBER());
+//            }
+//        }){};
 
 
 
@@ -72,22 +72,22 @@ public class MainActivity extends AppCompatActivity {
                 .url("http://www.baidu.com")
                 .method(METHOD.GET)
                 .build();
-        request.enqueue(callback);
+//        request.enqueue(callback);
 
-//        request.enqueue(new JSONObjectSerializerCallback<String>(serializer) {
-//
-//            @Override
-//            public void onError(Exception e, String error, int id) {
-//                Log.e("request", error);
-//            }
-//
-//            @Override
-//            public void onResponse(String response, int id) {
-//                Log.e("response", response);
-//                textView.setText(response);
-//            }
-//
-//        });
+        request.enqueue(new JSONObjectSerializerCallback<String>(serializer) {
+
+            @Override
+            public void onError(Exception e, String error, int id) {
+                Log.e("request", error);
+            }
+
+            @Override
+            public void onResponse(String response, int id) {
+                Log.e("response", response);
+                textView.setText(response);
+            }
+
+        });
 
 
 
